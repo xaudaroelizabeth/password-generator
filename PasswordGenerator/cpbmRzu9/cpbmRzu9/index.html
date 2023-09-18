@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>  
+       
+        <div>
+            <h1 class="title1"> Generate a </h1> 
+            <h1 class="title2"> random password </h1>
+            <p class="security"> Never use an insecure password again. </p>
+           
+            <div class="input-container">
+                <button class="create-password" onclick="makePassword()">Generate passwords</button>
+                <input class= "password-length" type= "number" id="quantity" min="5" max="15" value="5">
+            </div>
+            <br></br>
+            <div class="line-break">
+                 <button class="password1" id="password1-el" onclick="copy1()">Password1</button>
+                 <button class="password1"id="password2-el" onclick="copy2()">Password2</button>
+            </div>
+            <input id='copyPass' value='test'>
+         </div>
+          <script src="index.js"></script>        
+    </body>
+</html>

@@ -1,0 +1,80 @@
+
+body {
+    margin: 0;
+    background-color: #1F2937;
+    display:flex; 
+    justify-content: center;
+}
+#copyPass{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.title1 {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    margin-top: 70px;
+    margin-bottom:-30px;
+}
+
+.title2 {
+    color: #4ADF86;
+    padding-top: 0px;
+    padding-bottom: 2px
+    
+}
+.line-break{
+   border-top: solid 1px #2F3E53;
+   padding: 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: start;
+}
+
+.security {
+    color: #D5D4D8;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: Inter;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.create-password {
+    all: unset;
+    border-radius: 6px;
+    padding: 7px 7px 7px 7px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+    background: #10B981; 
+}
+
+.password1 {
+    all: unset;
+    border-radius: 6px;
+    background: #273549;
+    padding: 8px 40px 8px 40px;
+    color: #55F991; 
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    width: auto;
+}
+
+
+
