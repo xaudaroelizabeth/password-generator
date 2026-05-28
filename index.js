@@ -137,3 +137,11 @@ function copy2() {
   copyText.select();
   document.execCommand("copy");
 }
+
+// 💡 Exposed functions to the global scope to support legacy DOM event bindings
+// while maintaining a modular build system.
+// Allowing inline HTML onclick handlers to access functions in production builds.
+
+window.makePassword = makePassword;
+window.copy1 = copy1;
+window.copy2 = copy2;

@@ -75,6 +75,23 @@ Password lengths can be customized between 5–15 characters.
 
 This project can be deployed using platforms such as Netlify, Vercel, or GitHub Pages.
 
+---
+
+## 🧠 Technical Notes
+
+💡 **Global Function Exposure (Build Behavior)**
+
+This project uses Vite for bundling, which wraps JavaScript in ES modules during production builds.  
+To support legacy HTML `onclick` handlers without refactoring the UI, selected functions are exposed to the global scope.
+
+Example:
+
+```js
+window.makePassword = makePassword;
+window.copy1 = copy1;
+window.copy2 = copy2;
+
 ## 📄 License
 
 This project is for educational and portfolio purposes.
+```
