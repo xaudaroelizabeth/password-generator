@@ -157,3 +157,4 @@ function copy2() {
 window.makePassword = makePassword;
 window.copy1 = copy1;
 window.copy2 = copy2;
+window.counter = counter;
