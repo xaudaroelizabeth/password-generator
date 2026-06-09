@@ -16,8 +16,14 @@
             <p class="security"> Never use an insecure password again. </p>
 
             <div class="input-container">
+
+                <div class="counter">
+                    <button onclick="counter(false)">−</button>
+                    <input class="password-length" type="number" id="quantity" min="5" max="15" value="5">
+                    <button onclick="counter(true)">+</button>
+                </div>
+
                 <button class="create-password" onclick="makePassword()">Generate passwords</button>
-                <input class="password-length" type="number" id="quantity" min="5" max="15" value="5">
             </div>
         </div>
 

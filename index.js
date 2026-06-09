@@ -95,6 +95,7 @@ const characters = [
 let password1El = document.getElementById("password1-el");
 let password2El = document.getElementById("password2-el");
 makePassword();
+
 function makePassword() {
   let password1 = "";
   let password2 = "";
@@ -112,6 +113,17 @@ function makePassword() {
 
   password1El.textContent = password1;
   password2El.textContent = password2;
+}
+
+function counter(increase = true) {
+  let quantity = document.getElementById("quantity").value;
+  if (increase && quantity < 15) {
+    quantity++;
+    document.getElementById("quantity").value = quantity;
+  } else if (!increase && quantity > 5) {
+    quantity--;
+    document.getElementById("quantity").value = quantity;
+  }
 }
 
 function randomIndex() {
