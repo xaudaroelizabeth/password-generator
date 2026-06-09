@@ -90,8 +90,10 @@ Example:
 window.makePassword = makePassword;
 window.copy1 = copy1;
 window.copy2 = copy2;
+```
+
+---
 
 ## 📄 License
 
 This project is for educational and portfolio purposes.
-```
