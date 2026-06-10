@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1F2937">
 </head>
 
 <body>
@@ -24,18 +25,20 @@
                 </div>
 
                 <button class="create-password" onclick="makePassword()">Generate passwords</button>
+                <p id="strength-label" class="strength">Strength: -</p>
             </div>
         </div>
 
 
-        <br></br>
+        <br>
         <div class="line-break">
             <button class="password1" id="password1-el" onclick="copy1()">Password1</button>
             <button class="password1" id="password2-el" onclick="copy2()">Password2</button>
         </div>
-        <input id='copyPass' value='test'>
     </div>
+    <div id="toast" class="toast"></div>
     <script type="module" src="index.js"></script>
+
 </body>
 
 </html>
